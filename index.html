@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMORF</title>
+ <!--파비콘-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!--아이콘-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!--폰트-->
+    <!--Diphylleia(logofont)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap"
+      rel="stylesheet"
+    />
+    <!--noto sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lugrasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--슬라이드-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="top_banner" class="banner">
+      <div class="banner_content">
+        <span>⇢ 아모르프 멤버십 혜택 ⇠</span>
+        <button id="close_banner" class="close_btn">&times;</button>
+      </div>
+    </div>
+
+    <header class="main_header">
+      <div class="header_top">
+        <div class="inner">
+          
+          <ul class="nav_left"><button class="hamburger" id="hamburger_btn">
+            <img src="./image/menu.png" alt="더보기메뉴">
+          </button>
+            <li class="left_text"><a href="#">COMMUNITY</a></li>
+            <li class="left_text"><a href="#">CUSTOMER CARE</a></li>
+          </ul>
+          <h1 class="logo"><a href="#">Amorf</a></h1>
+
+          <ul class="nav_right">
+            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+            <li class="right_text">
+              <a href="#">MY ACCOUNT</a>
+            </li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li
+              class="right_text"
+              style="
+                font-size: 1.1rem;
+                display: inline-block;
+                transform: scale(1.2);
+              "
+            >
+              <a href="#">♡</a>
+            </li>
+            <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li class="right_text">
+              <a href="#"
+                ></i>BAG
+                (0)</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--//inner-->
+      </div>
+      <!--//header-top-->
+      <div class="header_bottom">
+        <div class="inner">
+          <div class="search_box">
+            <input type="text" placeholder="SEARCH" />
+          </div>
+          <div class="gnb">
+            <ul>
+              <li><a href="#">NEW</a></li>
+              <li><a href="#">BEST</a></li>
+              <li class="gnb_text">
+                SHOP
+                <ul class="submenu">
+                  <li><a href="#">ALL</a></li>
+                  <li><a href="#">아우터웨어</a></li>
+                  <li><a href="#">니트웨어</a></li>
+                  <li><a href="#">탑&nbsp;│&nbsp;티셔츠</a></li>
+                  <li><a href="#">셔츠&nbsp;│&nbsp;블라우스</a></li>
+                  <li><a href="#">팬츠</a></li>
+                  <li><a href="#">스커트&nbsp;│&nbsp;드레스</a></li>
+                  <li><a href="#">슈즈&nbsp;│&nbsp;백</a></li>
+                  <li><a href="#">악세서리</a></li>
+                </ul>
+              </li>
+              <li><a href="#">SALE</a></li>
+              <li><a href="#">EXCLUSIVE</a></li>
+              <li><a href="#">ABOUT US</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--//inner-->
+      </div>
+      <!--//header_bottom-->
+    </header>
+    <div id="menu_mobile" class="hamburger_menu">
+      <ul class="menu_box">
+        <li><div class="search_box">
+          <input type="text" placeholder="SEARCH" /><i class="fa-solid fa-magnifying-glass"></i>
+        </div></li>
+        <br>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">BEST</a></li>
+        <li><a href="#" class="shop_toggle">SHOP</a>
+          <ul class="submenu_mobile">
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">아우터웨어</a></li>
+            <li><a href="#">니트웨어</a></li>
+            <li><a href="#">탑&nbsp;│&nbsp;티셔츠</a></li>
+            <li><a href="#">셔츠&nbsp;│&nbsp;블라우스</a></li>
+            <li><a href="#">팬츠</a></li>
+            <li><a href="#">스커트&nbsp;│&nbsp;드레스</a></li>
+            <li><a href="#">슈즈&nbsp;│&nbsp;백</a></li>
+            <li><a href="#">악세서리</a></li>
+          </ul></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">EXCLUSIVE</a></li>
+        <li><a href="#">ABOUT US</a></li>
+<br>
+        <li><a href="#">COMMUNITY</a></li>
+        <li><a href="#">CUSTOMER CARE</a></li>
+
+      </ul>
+    </div>
+    <div id="content" class="main01">
+      <div class="banner_img01">
+        <a href="#"><img src="./image/mainbanner.jpg" alt="mainimage1" /></a>
+      </div>
+      <div class="banner_img02">
+        <a href="#"><img src="./image/mainbanner2.jpg" alt="mainimage2" /></a>
+      </div>
+    </div>
+
+    <section class="sc_product">
+      <div class="inner">
+        <div class="title_area">
+          <h2 class="tit">WEEKLY BEST</h2>
+          <div class="btn_group">
+            <button type="button" class="btn_prev">
+              <img src="./image/ph_arrow-left.png" alt="왼쪽화살표" />
+            </button>
+            <button type="button" class="btn_next">
+              <img src="./image/ph_arrow-right.png" alt="오른쪽화살표" />
+            </button>
+          </div>
+        </div>
+        <div class="swiper prd_swiper">
+          <ul class="prd_list swiper-wrapper">
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b1.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">플리츠스트랩티셔츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">25,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #ebebeb"></span>
+                  <span class="chip" style="background-color: #251816"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b2.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">페널레더점퍼</div>
+
+                <div class="prd_price">
+                  <span class="sale">136,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #352f30"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b3.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">워크커브드팬츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">36,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #ebebeb"></span>
+                  <span class="chip" style="background-color: #a08e78"></span>
+                  <span class="chip" style="background-color: #6d665d"></span>
+                  <span class="chip" style="background-color: #382d2b"></span>
+                  <span class="chip" style="background-color: #222128"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b4.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">버튼데미지니트</div>
+
+                <div class="prd_price">
+                  <span
+                    class="origin_price"
+                    style="text-decoration: line-through color: #999;"
+                    >38,000원</span
+                  >
+                  <span class="sale">32,300원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #89888e"></span>
+                  <span class="chip" style="background-color: #aba1a0"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b5.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">폴딩스트링스커트</div>
+
+                <div class="prd_price">
+                  <span class="sale">24,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #aaaaac"></span>
+                  <span class="chip" style="background-color: #a7944f"></span>
+                  <span class="chip" style="background-color: #202020"></span>
+
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b6.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">포스터티셔츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">24,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #cdcdcf"></span>
+                  <span class="chip" style="background-color: #858384"></span>
+                  <span class="chip" style="background-color: #b63031"></span>
+
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b7.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">시드니점퍼</div>
+
+                <div class="prd_price">
+                  <span class="sale">69,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #cecece"></span>
+
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/b8.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">브리튼워싱셔츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">42,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #911329"></span>
+                  <span class="chip" style="background-color: #aabcd0"></span>
+
+                  <span class="chip" style="background-color: #cdcdcd"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--//swiper prd_swiper-->
+      </div>
+      <!--//inner-->
+    </section>
+    <!--//sc_product-->
+    <div id="content" class="main02">
+      <div class="subbanner_img" style="border-bottom: #1a1a1a">
+        <a href="#"><img src="./image/subbanner.jpg" alt="mainimage3" /></a>
+      </div>
+    </div>
+
+    <section class="sc_product">
+      <div class="inner">
+        <div class="title_area">
+          <h2 class="tit">NEW</h2>
+          <div class="btn_group">
+            <button type="button" class="btn_prev">
+              <img src="./image/ph_arrow-left.png" alt="왼쪽화살표" />
+            </button>
+            <button type="button" class="btn_next">
+              <img src="./image/ph_arrow-right.png" alt="오른쪽화살표" />
+            </button>
+          </div>
+        </div>
+        <div class="swiper prd_swiper">
+          <ul class="prd_list swiper-wrapper">
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n1.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">[made]핀코트버튼티셔츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">28,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #858585"></span>
+                  <span class="chip" style="background-color: #dedfe8"></span>
+                  <span class="chip" style="background-color: #0b0b0b"></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n2.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">[made]제리와이드하프팬츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">34,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #dedfe8"></span>
+                  <span class="chip" style="background-color: #0b0b0b"></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n3.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">제이린넨가디건</div>
+
+                <div class="prd_price">
+                  <span class="sale">29,800원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #ae9cb0"></span>
+                  <span class="chip" style="background-color: #9f9c9f"></span>
+                  <span class="chip" style="background-color: #9a8c61"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n4.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">[made]시스루보트넥티셔츠</div>
+
+                <div class="prd_price">
+                  <span
+                    class="origin_price"
+                    style="text-decoration: line-through color: #999;"
+                    >38,000원</span
+                  >
+                  <span class="sale">28,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #ddd6ca"></span>
+                  <span class="chip" style="background-color: #818081"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n5.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">백오픈실키셔츠</div>
+
+                <div class="prd_price">
+                  <span class="sale">36,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #dedcdc"></span>
+                  <span class="chip" style="background-color: #b3b7c0"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n6.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">[made]시드니링데님</div>
+
+                <div class="prd_price">
+                  <span class="sale">42,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #566373"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n7.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">텐셀랩스커트</div>
+
+                <div class="prd_price">
+                  <span class="sale">24,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #f0f0ed"></span>
+
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+            <li class="prd_item swiper-slide">
+              <div class="thumnail">
+                <img src="./image/n8.gif" alt="prdimg" />
+              </div>
+              <div class="deskription">
+                <div class="prd_name">셔링언발스커트</div>
+
+                <div class="prd_price">
+                  <span class="sale">36,000원</span>
+                </div>
+                <div class="prd_colors">
+                  <span class="chip" style="background-color: #8a8a8a"></span>
+                  <span class="chip" style="background-color: #000"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--//swiper prd_swiper-->
+      </div>
+      <!--//inner-->
+    </section>
+    <!--//sc_product-->
+    <footer id="footer">
+      <div class="footer_left">
+        <div class="footer_col">
+          <p class="footer_title">AMORF</p>
+          <ul>
+            <li><a href="#">OURSTORY</a></li>
+            <li><a href="#">LOCATIONS</a></li>
+            <li><a href="#">OUR COLLECTION</a></li>
+            <li><a href="#">MEMBERSHIP</a></li>
+            <li><a href="#">STOCKIST</a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">SUPPORT</p>
+          <ul>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">TERMS AND CONDITIONS</a></li>
+            <li><a href="#">COMPANY</a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">SOCIALS</p>
+          <ul>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">KAKAOTALK</a></li>
+            <li><a href="#">TIKTOK</a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <p class="footer_title">CONTACT</p>
+          <ul>
+            <li><a href="#">DROP US A NOTE ANYTIME.</a></li>
+            <li><a href="#">CS - CHANNEL TALK ONLY</a></li>
+            <li><a href="#">PR/WHOLESALE - info@amorf.co.kr</a></li>
+            <li><a href="#">CAREER - team@amorf.co.kr</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_right">
+        <div class="footer_signup">
+          <p class="footer_title">JOIN US TO SEE BEYOND!</p>
+          <button class="signup_btn">SIGN UP</button>
+          <p class="signup_desc">
+            Sign up and receive <a href="#">10% off your first purchase.</a>
+          </p>
+        </div>
+        <div class="footer_bizinfo">
+          <p class="biz_name">아모르프(AMORF)</p>
+          <p>
+            주소: 서울특별시 중구 디지털로 230, 1805 | 대표자:이새연 |
+            사업자등록번호:360-55-23333 | 통신판매신고번호:2000-서울중구-1111
+          </p>
+          <p>고객센터:050-1111-2222 / CONTACT@AMORF.CO.KR</p>
+        </div>
+      </div>
+    </footer>
+    <button id="top_btn">
+      <span class="top_arrow"><a href="">&#8743;</a></span>
+      <span class="top_text">TOP</span>
+    </button>
+    <!--제이쿼리----------------------------->
+    <script src="/jquery-4.0.0.min.js"></script>
+<!--멤버쉽혜택배너----------------------------->
+   <script>
+   function updateContentTop() {
+  if ($(window).width() <= 768) {
+    const bannerHeight = $('#top_banner').hasClass('hidden') ? 0 : $('#top_banner').outerHeight();
+    const headerHeight = $('.main_header').outerHeight();
+    const totalHeight = bannerHeight + headerHeight;
+    $('.main01').css('margin-top', totalHeight + 'px');
+  } else {
+    $('.main01').css('margin-top', '0');
+  }
+}
+
+$(document).ready(function () {
+  $('.main_header').css('top', $('#top_banner').outerHeight() + 'px');
+  updateContentTop();
+  $('#close_banner').click(function () {
+    $('#top_banner').addClass('hidden');
+    $('.main_header').css('top', '0');
+    updateContentTop();
+  });
+});
+
+$(window).on('load', function () {
+  updateContentTop();
+});
+
+$(window).on('resize', function () {
+  clearTimeout(window.resizeTimer);
+  window.resizeTimer = setTimeout(function () {
+    updateContentTop();
+  }, 100);
+});
+</script>
+    <!--헤더>서브메뉴------------->
+    <script>
+      $('.gnb_text').on('click', function (e) {
+        e.stopPropagation();
+        const headerBottom =
+          $('.main_header')[0].getBoundingClientRect().bottom;
+        const shopLeft = $(this)[0].getBoundingClientRect().left;
+
+        $('.submenu').css({
+          top: headerBottom + 'px',
+          left: '0',
+          'padding-left': shopLeft + 'px',
+        });
+
+        $('.submenu').toggleClass('open'); // open만으로 열고 닫기
+      });
+
+      $(document).on('click', function () {
+        $('.submenu').removeClass('open');
+      });
+
+      $('.submenu').on('click', function (e) {
+        e.stopPropagation();
+      });
+      // 브라우저 크기 바뀔 때 서브메뉴 위치 재계산
+      $(window).on('resize', function () {
+        if ($('.submenu').hasClass('open')) {
+          const headerBottom =
+            $('.main_header')[0].getBoundingClientRect().bottom;
+          const shopLeft = $('.gnb_text')[0].getBoundingClientRect().left;
+
+          $('.submenu').css({
+            top: headerBottom + 'px',
+            'padding-left': shopLeft + 'px',
+          });
+        }
+      });
+    </script>
+<!--헤더>더보기메뉴(모바일웹)------------->
+<script>
+  $('#hamburger_btn').on('click', function (e) {
+    e.stopPropagation();
+    const headerBottom =
+      $('.main_header')[0].getBoundingClientRect().bottom;
+    const shopLeft = $(this)[0].getBoundingClientRect().left;
+
+    $('#menu_mobile').css({
+      top: headerBottom + 'px',
+      height: (window.innerHeight - headerBottom) + 'px'
+    });
+
+    $('#menu_mobile').toggleClass('open'); // open만으로 열고 닫기
+  });
+
+  $(document).on('click', function () {
+    $('#menu_mobile').removeClass('open');
+  });
+
+  $('#menu_mobile').on('click', function (e) {
+    e.stopPropagation();
+  });
+
+  $(window).on('resize', function () {
+  // 768px 초과하면 더보기메뉴 닫기
+  if ($(window).width() > 768) {
+    $('#menu_mobile').removeClass('open');
+  }
+  
+  clearTimeout(window.resizeTimer);
+  window.resizeTimer = setTimeout(function () {
+    updateContentTop();
+  }, 100);
+});
+  
+</script>
+
+<!--헤더>더보기메뉴(모바일웹)>서브메뉴(모바일웹)------------->
+<script>
+ $('.shop_toggle').on('click', function (e) {
+  e.preventDefault();    // 링크 이동 막기
+  e.stopPropagation();   // 클릭 이벤트 버블링 방지
+  $('.submenu_mobile').toggleClass('open');
+});
+</script>
+
+    <!--상품슬라이드------------->
+    <script>
+      const prdSwiper = new Swiper('.prd_swiper', {
+        slidesPerView: 4 /* 한 번에 보일 상품 개수 */,
+        spaceBetween: 0 /* 상품 사이 간격 */,
+        loop: true /* 무한 반복 */,
+        navigation: {
+          /* 화살표 연결 */ nextEl: '.btn_next',
+          prevEl: '.btn_prev',
+        },
+        // 브라우저 크기에 따른 반응형 설정 (선택사항)
+        breakpoints: {
+          320: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        },
+      });
+    </script>
+    <!--탑버튼------------->
+    <script>
+      //스크롤 내리면 탑버튼 나타나게
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          $('#top_btn').addClass('show');
+        } else {
+          $('#top_btn').removeClass('show');
+        }
+      });
+      //클릭시 위로
+      $('#top_btn').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400);
+      });
+    </script>
+
+  </body>
+</html>

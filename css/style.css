@@ -1,0 +1,586 @@
+@charset "utf-8";
+/* 배너 스타일 */
+.banner {
+  width: 100%;
+  background-color: #cbdae8;
+  padding: 0.3rem 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.banner_content {
+  font-size: 1rem; /*1rem=10px*/
+}
+
+.close_btn {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 배너가 닫혔을 때 적용될 클래스 */
+.hidden {
+  display: none;
+}
+
+/* 헤더 스타일 */
+.main_header {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+  font-size: 1.1rem;
+}
+
+.main_header > .header_top {
+  width: 100%;
+  border-bottom: 1px #1a1a1a solid;
+}
+
+.main_header > .header_top > .inner {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_header > .header_top > .inner > .nav_left {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+}
+.hamburger {
+  display: none;
+  max-width: 2.5rem;
+}
+
+.main_header > .header_top > .inner > .nav_left > .left_text {
+  max-width: 100%;
+  display: inline;
+  padding: 2rem 3.5rem 2rem 2.5rem;
+}
+
+.main_header > .header_top > .inner > .nav_left > .left_text > a {
+  display: inline-block;
+  width: 100%;
+}
+.logo {
+  width: 30%;
+  font-family: 'Diphylleia', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.8rem;
+  letter-spacing: -0.02rem;
+  text-align: center;
+  padding-bottom: 0.8rem;
+  line-height: 2.8rem;
+}
+
+.main_header > .header_top > .inner > .nav_right {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.nav_right i {
+  display: none; /* 데스크탑에서 아이콘 숨김 */
+  font-size: 1.2rem;
+}
+
+.main_header > .header_top > .inner > .nav_right > .right_text {
+  max-width: 100%;
+  display: inline;
+  padding: 2rem 2.5rem 2rem 3.5rem;
+}
+
+.main_header > .header_top > .inner > .nav_right > .right_text > a {
+  display: inline-block;
+  width: 100%;
+}
+
+.main_header > .header_bottom {
+  width: 100%;
+
+  border-bottom: 1px #1a1a1a solid;
+}
+
+.main_header > .header_bottom > .inner {
+  height: 4rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.main_header > .header_bottom > .inner > .search_box {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: c;
+  width: 22%;
+  border-right: #1a1a1a solid 1px;
+  padding: 0 2.5rem;
+  height: 100%;
+}
+
+.search_box input::placeholder {
+  color: #000;
+  font-size: 1.1rem;
+}
+.main_header > .header_bottom > .inner > .gnb {
+  position: static;
+  margin: 0 auto;
+}
+.main_header > .header_bottom > .inner > .gnb > ul {
+  display: flex;
+  justify-content: center;
+}
+.main_header > .header_bottom > .inner > .gnb > ul > li {
+  max-width: 100%;
+  padding: 0 1.75rem;
+}
+
+/*----------------------헤더>서브메뉴----------------------*/
+
+.submenu {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 9999;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.submenu.open {
+  max-height: 30rem;
+  padding: 1rem 0;
+}
+.submenu > li > a {
+  display: block;
+  padding: 0.6rem 2rem;
+  color: #888;
+  white-space: nowrap;
+}
+.submenu > li > a:hover {
+  color: #000;
+}
+
+/*----------------------모바일더보기메뉴----------------------*/
+#menu_mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  z-index: 9998;
+  white-space: nowrap;
+  padding: 2rem 1.5rem;
+}
+#menu_mobile.open {
+  transform: translateX(0);
+}
+
+.menu_box > li > a {
+  display: inline-block;
+  padding: 0.8rem 0;
+}
+.menu_box > li > .search_box {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_box > li > .search_box > input,
+.menu_box > li > .search_box > i {
+  display: inline-block;
+}
+
+.submenu_mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.submenu_mobile.open {
+  max-height: 25rem;
+}
+.submenu_mobile > li > a {
+  display: block;
+  padding: 0.4rem 0 0.4rem 1rem;
+  color: #555;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/*----------------------메인배너--------------------*/
+.main01 {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  z-index: 100;
+}
+.main01 > div {
+  width: 50%;
+  overflow: hidden;
+}
+.main01 > div > a > img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  border: 0;
+}
+.main01 > div > a > img {
+  width: 101%; /* 이미지 사이 흰여백제거 */
+}
+
+/*----------------------섹션1(WEEKLY BEST)--------------------*/
+.sc_product {
+  width: 100%;
+}
+
+.title_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  margin-top: -0.1rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.tit {
+  padding-left: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.btn_group {
+  padding-right: 2.5rem;
+  display: flex;
+}
+
+.btn_next {
+  padding-left: 1.5rem;
+}
+
+.prd_colors {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.chip {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.prd_swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.prd_item {
+  height: auto;
+  text-align: left;
+  border-right: #c7c7c7 1px solid;
+}
+
+.thumnail img {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  outline: 1px solid #c7c7c7;
+}
+.prd_name {
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.prd_price {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+.deskription {
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+/* 취소선 스타일 수정 (오타 교정) */
+.origin_price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+  font-size: 1em;
+}
+
+.prd_colors {
+  position: absolute;
+  right: 2.5rem;
+  top: 0;
+}
+
+/*-------------------------서브배너--------------------------*/
+
+.main02 {
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.main02 img {
+  display: block;
+  width: 100%;
+}
+
+/*-------------------------footer--------------------------*/
+/* ── FOOTER ── */
+#footer {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #1a1a1a;
+  min-height: 350px;
+}
+
+.footer_left {
+  display: flex;
+  width: 50%;
+  border-right: 1px solid #1a1a1a;
+  padding: 3.5rem 5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer_col {
+  flex: 1;
+}
+
+.footer_title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.footer_col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footer_col ul li a {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer_col ul li a:hover {
+  color: #1a1a1a;
+}
+
+.footer_right {
+  width: 50%;
+  padding: 3.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_signup .footer_title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.signup_btn {
+  display: block;
+  width: 50%;
+  padding: 1.2rem 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.signup_btn:hover {
+  background-color: #333;
+}
+
+.signup_desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+.signup_desc a {
+  text-decoration: underline;
+  color: #555;
+}
+
+.footer_bizinfo {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.8;
+}
+
+.biz_name {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+/*-----------------탑버튼----------------*/
+#top_btn {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  color: fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#top_btn.show {
+  opacity: 1;
+}
+.top_arrow {
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  transform: translateY(-0.3rem);
+}
+
+.top_text {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  color: #fff;
+  display: block;
+  margin-top: -0.5rem;
+}
+
+/*모바일버전-----------------------------------*/
+@media (max-width: 768px) {
+  .banner_content {
+    font-weight: 500;
+  }
+
+  .hamburger {
+    display: flex;
+    padding-left: 0.5rem;
+  }
+  .search_box input::placeholder {
+    font-size: 1.2rem;
+  }
+  .menu_box > li > a {
+    font-size: 1.2rem;
+  }
+  .submenu_mobile > li > a {
+    font-size: 1.2rem;
+  }
+  .left_text {
+    display: none !important;
+  }
+  .nav_right i {
+    display: inline;
+  }
+  .right_text {
+    display: none !important;
+  }
+  .header_bottom {
+    display: none;
+  }
+
+  .main_header > .header_top > .inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main_header > .header_top > .inner > .nav_right {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+  }
+  .main_header > .header_top > .inner > .nav_right > li > a {
+    display: inline-block;
+    padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+  }
+  .banner_img02 {
+    display: none;
+  }
+  .main01 > .banner_img01 {
+    width: 100%; /* 전체 너비 */
+  }
+  .banner_img01 > a > img {
+    max-width: 100vw;
+    object-fit: cover;
+  }
+  .main02 {
+    display: none;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+  .footer_left {
+    width: 100%;
+    border-right: none;
+    border-bottom: #1a1a1a solid 1px;
+    padding: 2rem;
+  }
+
+  .footer_right {
+    width: 100%;
+    padding: 2rem;
+  }
+  .signup_btn {
+    width: 100%;
+  }
+  .footer_signup {
+    margin-bottom: 2rem;
+  }
+  .deskription {
+    padding-left: 1.5rem;
+  }
+  .prd_colors {
+    position: static;
+    gap: 0.4rem;
+    padding: 1.2rem 0 1rem;
+    margin-bottom: 0;
+  }
+  .prd_price {
+    font-weight: 600;
+  }
+}
