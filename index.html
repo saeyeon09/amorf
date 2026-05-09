@@ -693,9 +693,18 @@ $(window).on('resize', function () {
         },
         // 브라우저 크기에 따른 반응형 설정 (선택사항)
         breakpoints: {
-          320: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          320: { slidesPerView: 2, 
+            grid:{
+              rows:2,
+              fill:'row'
+            },spaceBetween:0,
+          },
+          768: { slidesPerView: 3,
+            grid: { rows: 1 },
+           },
+          1024: { slidesPerView: 4,
+              grid: { rows: 1 },
+           },
         },
       });
     </script>
