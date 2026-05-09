@@ -491,7 +491,7 @@
 }
 
 /*모바일버전-----------------------------------*/
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .banner_content {
     font-weight: 500;
   }
@@ -582,5 +582,11 @@
   }
   .prd_price {
     font-weight: 600;
+  }
+  .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  .prd_item {
+    height: auto !important;
   }
 }
